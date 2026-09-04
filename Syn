@@ -1,0 +1,36 @@
+local placeId = game.PlaceId
+local gameId = game.GameId
+
+local mm2Id = 142823291
+local vblPlaceId = 74691681039273
+local vblGameId = 6931042565
+local timebombId = 11379739543
+local sellId = 79268393072444
+local nights99PlaceId = 126509999114328
+local nights99GameId = 7326934954
+local nights99AltId = 79546208627805
+
+if placeId == mm2Id or gameId == mm2Id then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/f88bc27f071600baaa1afc246ffb6c53461c215a7db93c969959072152943cd5/download"))()
+
+elseif placeId == vblPlaceId or gameId == vblGameId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/41bf8158fc125b3d895f332771b5aeaed072c5b8ea16d8002d0878644fa3578f/download"))()
+
+elseif placeId == timebombId or gameId == timebombId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/7915991c0c868d1938aff55d370c8050e063cbcb8762a95fd405f21b8587ea2c/download"))()
+
+elseif placeId == sellId or gameId == sellId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/ff814553aa17869782d307d09f80f9203045d418f26e02a1326ffe50a0ba73d6/download"))()
+
+elseif placeId == nights99PlaceId or gameId == nights99GameId or placeId == nights99AltId or gameId == nights99AltId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/a11b42c963f39e663c4f90b5990d9a30b84f57bd58caeaae52f713602fbaddf6/download"))()
+
+else
+    pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Synvextia Hub",
+            Text = "Not supported! PID: " .. tostring(placeId) .. " | GID: " .. tostring(gameId),
+            Duration = 10
+        })
+    end)
+end
