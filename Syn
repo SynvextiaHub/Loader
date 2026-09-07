@@ -10,6 +10,13 @@ local doorsGameId = 2440500124
 local nights99PlaceId = 126509999114328
 local nights99GameId = 7326934954
 local nights99AltId = 79546208627805
+local deadRailsGameId = 7018190066
+local deadRailsMainPlaceId = 116495829188952
+local deadRailsGamePlaceId = 70876832253163
+local deadRailsLobbyPlaceId = 110282088381749
+local deadRailsProLobbyPlaceId = 74106709399219
+local sellLemonsPlaceId = 79268393072444
+local sellLemonsGameId = 7395930870
 
 if placeId == mm2Id or gameId == mm2Id then
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/f88bc27f071600baaa1afc246ffb6c53461c215a7db93c969959072152943cd5/download"))()
@@ -25,6 +32,12 @@ elseif placeId == doorsPlaceId or gameId == doorsGameId then
 
 elseif placeId == nights99PlaceId or gameId == nights99GameId or placeId == nights99AltId or gameId == nights99AltId then
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/a11b42c963f39e663c4f90b5990d9a30b84f57bd58caeaae52f713602fbaddf6/download"))()
+
+elseif gameId == deadRailsGameId or placeId == deadRailsMainPlaceId or placeId == deadRailsGamePlaceId or placeId == deadRailsLobbyPlaceId or placeId == deadRailsProLobbyPlaceId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/19ab1970bbdf3b967d63349f52d7967b0e7a39860a4e463f2f4771a165aa543e/download"))()
+
+elseif placeId == sellLemonsPlaceId or gameId == sellLemonsGameId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/8761e9aee78806f394dd4b241e2db9a610a203252b6e6211ffa11acd241117dd/download"))()
 
 else
     pcall(function()
