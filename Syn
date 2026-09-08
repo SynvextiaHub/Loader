@@ -19,6 +19,11 @@ local sellLemonsPlaceId = 79268393072444
 local sellLemonsGameId = 7395930870
 local rivalsPlaceId = 17625359962
 local rivalsGameId = 6035872082
+local forsakenPlaceId = 18687417158
+local forsakenGameId = 6331902150
+local forsakenNPlaceId = 83645629621104
+local forsakenVCPlaceId = 86454545238517
+local forsakenRandomizerPlaceId = 94626476208514
 
 if placeId == mm2Id or gameId == mm2Id then
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/f88bc27f071600baaa1afc246ffb6c53461c215a7db93c969959072152943cd5/download"))()
@@ -43,6 +48,9 @@ elseif placeId == sellLemonsPlaceId or gameId == sellLemonsGameId then
 
 elseif placeId == rivalsPlaceId or gameId == rivalsGameId then
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/d2e4c4d92b9bee53613fab85b501ff0d9847713d7b5cc4b557f6e26aab1bebb5/download"))()
+
+elseif placeId == forsakenPlaceId or gameId == forsakenGameId or placeId == forsakenNPlaceId or placeId == forsakenVCPlaceId or placeId == forsakenRandomizerPlaceId then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/c4a16f42a7835b55dc9674bfda8d1137d16879fe3508c139d4cba5974015c714/download"))()
 
 else
     pcall(function()
